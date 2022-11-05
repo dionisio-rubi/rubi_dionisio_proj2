@@ -2,15 +2,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "AddingHex.h"
-#include "ANDHex.h"
-#include "ASRHex.h"
-#include "LSRHex.h"
-#include "LSLHex.h"
-#include "NOTHex.h"
-#include "ORRHex.h"
-#include "SUBHex.h"
-#include "XORHex.h"
+#include "CMDHex.h"
 
 class FileManager {
     private:

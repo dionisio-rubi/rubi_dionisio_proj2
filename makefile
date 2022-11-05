@@ -1,37 +1,13 @@
 all: proj2
 
-proj2: main.o AddingHex.o ANDHex.o ASRHex.o LSRHex.o LSLHex.o NOTHex.o ORRHex.o SUBHex.o XORHex.o FileManager.o
-	g++ -o proj2 main.o AddingHex.o ANDHex.o ASRHex.o LSRHex.o LSLHex.o NOTHex.o ORRHex.o SUBHex.o XORHex.o FileManager.o
+proj2: main.o CMDHex.o FileManager.o
+	g++ -o proj2 main.o CMDHex.o FileManager.o
 
 main.o: main.cpp
 	g++ -c main.cpp
 
-AddingHex.o: AddingHex.cpp AddingHex.h
-	g++ -c AddingHex.cpp
-
-ANDHex.o: ANDHex.cpp ANDHex.h
-	g++ -c ANDHex.cpp
-
-ASRHex.o: ASRHex.cpp ASRHex.h
-	g++ -c ASRHex.cpp
-
-LSRHex.o: LSRHex.cpp LSRHex.h
-	g++ -c LSRHex.cpp
-
-LSLHex.o: LSLHex.cpp LSLHex.h
-	g++ -c LSLHex.cpp
-
-NOTHex.o: NOTHex.cpp NOTHex.h
-	g++ -c NOTHex.cpp
-
-ORRHex.o: ORRHex.cpp ORRHex.h
-	g++ -c ORRHex.cpp
-	
-SUBHex.o: SUBHex.cpp SUBHex.h
-	g++ -c SUBHex.cpp
-
-XORHex.o: XORHex.cpp XORHex.h
-	g++ -c XORHex.cpp
+CMDHex.o: CMDHex.cpp CMDHex.h
+	g++ -c CMDHex.cpp
 
 FileManager.o: FileManager.cpp FileManager.h
 	g++ -c FileManager.cpp
